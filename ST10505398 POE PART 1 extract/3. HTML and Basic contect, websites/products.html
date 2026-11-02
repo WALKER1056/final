@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Accessories | Shop Sleeves, Bags & Protection - WALBOT</title>
+    <meta name="description" content="Browse WALBOT's collection of premium laptop accessories. Shop laptop sleeves, carry bags, screen protectors, and keyboard covers.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head><script src="js/main.js"></script>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="brand-name">WALBOT</span>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Quality laptop accessories for every need</p>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCT FILTERS ===== -->
+    <section class="product-filters-section">
+        <div class="container">
+            <div class="product-filters">
+                <div class="filter-group">
+                    <label for="categoryFilter">Category:</label>
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="sleeves">Laptop Sleeves</option>
+                        <option value="bags">Carry Bags</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="productSearch">Search:</label>
+                    <input type="text" id="productSearch" placeholder="Search products...">
+                </div>
+                <div class="filter-group">
+                    <label for="sortProducts">Sort by:</label>
+                    <select id="sortProducts">
+                        <option value="name">Name</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCT GRID ===== -->
+    <section class="products-section">
+        <div class="container">
+            <div class="product-grid" id="productGrid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="sleeves" data-name="Charcoal Laptop Sleeve" data-price="299">
+                    <div class="image-wrapper">
+                        <img src="data:image/webp;base64,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" alt="WALBOT charcoal laptop sleeve with orange zipper and padded interior" loading="lazy" onclick="openLightbox(this)">
+                    </div>
+                    <span class="badge badge-popular">Popular</span>
+                    <h3>Charcoal Laptop Sleeve</h3>
+                    <p class="product-description">Water-resistant neoprene sleeve with soft inner lining and orange zipper detail. Fits laptops up to 15 inches.</p>
+                    <p class="price">R299</p>
+                    <button class="btn btn-primary add-to-cart" data-product="Charcoal Laptop Sleeve" data-price="299">Add to Cart</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="sleeves" data-name="Urban Laptop Sleeve" data-price="349">
+                    <div class="image-wrapper">
+                        <img src="https://th.bing.com/th/id/OIP.eeuLrKLJTeJeIJ63EivZ6gHaHa?w=216&h=216&c=7&r=0&o=7&pid=1.7&rm=3" alt="WALBOT urban laptop sleeve in grey with geometric pattern" loading="lazy" onclick="openLightbox(this)">
+                    </div>
+                    <span class="badge badge-new">New</span>
+                    <h3>Urban Laptop Sleeve</h3>
+                    <p class="product-description">Stylish grey sleeve with geometric pattern, padded protection, and external pocket for accessories.</p>
+                    <p class="price">R349</p>
+                    <button class="btn btn-primary add-to-cart" data-product="Urban Laptop Sleeve" data-price="349">Add to Cart</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="bags" data-name="Urban Laptop Backpack" data-price="599">
+                    <div class="image-wrapper">
+                        <img src="https://th.bing.com/th/id/OIP.6tOpClj6kkv0lYPTNAw8gAHaHa?w=216&h=216&c=7&r=0&o=7&pid=1.7&rm=3" alt="WALBOT urban laptop backpack in black with padded compartments" loading="lazy" onclick="openLightbox(this)">
+                    </div>
+                    <span class="badge badge-new">New</span>
+                    <h3>Urban Laptop Backpack</h3>
+                    <p class="product-description">Spacious backpack with padded laptop compartment, USB charging port, and multiple pockets for organisation.</p>
+                    <p class="price">R599</p>
+                    <button class="btn btn-primary add-to-cart" data-product="Urban Laptop Backpack" data-price="599">Add to Cart</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="bags" data-name="Messenger Laptop Bag" data-price="449">
+                    <div class="image-wrapper">
+                        <img src="https://th.bing.com/th/id/OIP.BbOE0P65okTX6dIDdj2ICwHaHa?w=196&h=196&c=7&r=0&o=7&pid=1.7&rm=3" alt="WALBOT messenger laptop bag in brown leather-look material" loading="lazy" onclick="openLightbox(this)">
+                    </div>
+                    <span class="badge badge-popular">Popular</span>
+                    <h3>Messenger Laptop Bag</h3>
+                    <p class="product-description">Professional messenger bag with water-resistant exterior, padded laptop sleeve, and adjustable strap.</p>
+                    <p class="price">R449</p>
+                    <button class="btn btn-primary add-to-cart" data-product="Messenger Laptop Bag" data-price="449">Add to Cart</button>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="accessories" data-name="Anti-Glare Screen Protector" data-price="149">
+                    <div class="image-wrapper">
+                        <img src="https://th.bing.com/th/id/OIP.pa87bJUDj9LoofuLgjuZqwHaFj?w=279&h=209&c=7&r=0&o=7&pid=1.7&rm=3" alt="WALBOT anti-glare screen protector for laptops" loading="lazy" onclick="openLightbox(this)">
+                    </div>
+                    <span class="badge badge-sale">Sale</span>
+                    <h3>Anti-Glare Screen Protector</h3>
+                    <p class="product-description">Protects your screen from scratches, reduces glare, and improves visibility in bright conditions.</p>
+                    <p class="price"><del>R199</del> R149</p>
+                    <button class="btn btn-primary add-to-cart" data-product="Anti-Glare Screen Protector" data-price="149">Add to Cart</button>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="accessories" data-name="Keyboard Cover" data-price="129">
+                    <div class="image-wrapper">
+                        <img src="data:image/webp;base64,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" alt="WALBOT silicone keyboard cover for laptops" loading="lazy" onclick="openLightbox(this)">
+                    </div>
+                    <span class="badge badge-sale">Sale</span>
+                    <h3>Silicone Keyboard Cover</h3>
+                    <p class="product-description">Flexible silicone keyboard cover that protects against dust, spills, and everyday wear. Fits most laptop models.</p>
+                    <p class="price"><del>R169</del> R129</p>
+                    <button class="btn btn-primary add-to-cart" data-product="Silicone Keyboard Cover" data-price="129">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary" id="cartSummary">
+                <h3>Your Cart</h3>
+                <div id="cartItems">
+                    <p class="empty-cart">Your cart is empty</p>
+                </div>
+                <div class="cart-total">
+                    <strong>Total: R<span id="cartTotal">0</span></strong>
+                </div>
+                <button class="btn btn-primary" id="checkoutBtn" onclick="checkout()">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>WALBOT</h4>
+                    <p>Premium laptop accessories for every lifestyle. Quality, style, and affordability—all in one place.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="products.html">Products</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="enquiry.html">Enquiry</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p>📧 hello@walbot.co.za</p>
+                    <p>📞 +27 82 123 4567</p>
+                    <p>📍 Johannesburg, South Africa</p>
+                </div>
+                <div>
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📸</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 WALBOT. All rights reserved. Made with ❤️ in South Africa.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== LIGHTBOX ===== -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
